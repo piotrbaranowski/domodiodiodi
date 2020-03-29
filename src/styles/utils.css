@@ -1,0 +1,25 @@
+.section {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.border {
+  border: 1px solid #e8e8e8;
+}
+
+.height-full {
+  height: 100%;
+}
+
+.hr {
+  border-width: 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-error {
+  color: darkred;
+}

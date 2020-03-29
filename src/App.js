@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import VisitPeriodPicker from './VisitPeriodPicker/VisitPeriodPicker';
+import './styles/buttons.css';
+import './styles/arrows.css';
+import './styles/utils.css';
 import './App.css';
 
 function App() {
+  const now = new Date();
+  const blacklist = [new Date(now.getFullYear(), now.getMonth(), now.getDate() + 4), new Date(now.getFullYear(), now.getMonth(), now.getDate() + 20)];
+  const updated = new Date(now.getFullYear(), now.getMonth(), now.getDate() - 7, now.getHours());
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="container__item border">
+        <VisitPeriodPicker price={199} averageRating={.88} numberOfRatings={1254} blacklist={blacklist} updated={updated} onSave={console.log}></VisitPeriodPicker>
+      </div>
     </div>
   );
 }

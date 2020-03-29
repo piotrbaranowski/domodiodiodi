@@ -1,0 +1,23 @@
+.rating-star {
+  font-size: .8em;
+  position: relative;
+  display: block;
+  float:left;
+}
+
+.rating-star:before {
+  content: "\2605";
+  color: #e7e7e7;
+}
+
+.rating-star-cover {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  overflow: hidden;
+}
+
+.rating-star-cover:after {
+  content: '\2605';
+  color: #39818e;
+}

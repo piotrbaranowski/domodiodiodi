@@ -1,0 +1,48 @@
+.button {
+  background-color: transparent;
+  text-align: left;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  transition: border-color .15s, background-color .15s, box-shadow .15s;
+}
+
+.button:hover {
+  background-color: #ebfaf9;
+}
+
+.button:focus {
+  box-shadow: 0 0 4px 0 #aceae7;
+  outline: 0;
+}
+
+.button:active {
+  background-color: #aceae7;
+  border-color: #aceae7;
+  color: #34787e;
+}
+
+.button--active {
+  background-color: #aceae7;
+  border-color: #aceae7;
+  color: #34787e;
+}
+
+.button[disabled] {
+  background-color: transparent;
+  border-color: #e8e8e8;
+  text-decoration: line-through;
+  color: #e8e8e8;
+}
+
+.button--outline {
+  border-color: #e8e8e8;
+}
+
+.button--no-border-radius {
+  border-radius: 0;
+}
+
+.button--grow {
+  flex-grow: 1;
+  flex-basis: 80px;
+}

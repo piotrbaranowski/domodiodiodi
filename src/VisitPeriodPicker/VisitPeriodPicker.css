@@ -1,0 +1,24 @@
+.card {
+  padding: 0 15px;
+}
+
+.card__header {
+  margin: 0 0 5px 0;
+}
+
+.small {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.dropdown-anchor {
+  position: relative;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
